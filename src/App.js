@@ -35,10 +35,11 @@ function App() {
     const img = document.createElement('img');
     img.src = result.url;
     document.body.appendChild(img);
-    //Add legible description of the result and below the url analyzed.
-    const description = document.createElement('p');
-    description.textContent = result.description.captions[0].text;
-    document.body.appendChild(description);
+    // Show json result and below of them the url analyzed.
+    const json = document.createElement('pre');
+    json.textContent = JSON.stringify(result, null, 2);
+    document.body.appendChild(json);
+  
   }
 
   return (
