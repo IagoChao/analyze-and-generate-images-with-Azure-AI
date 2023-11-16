@@ -21,4 +21,4 @@ const analyzeImage = async (url) => {
 };
 
 
- 
+export default analyzeImage;
