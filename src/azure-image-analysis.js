@@ -10,7 +10,7 @@ const analyzeImage = async (url) => {
     // y en el ejemplo de la documentación aparece https://westcentralus.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Categories,Description,Color
     // por lo que he decidido usar el del portal de Azure en su ultima versión disponible y mostrar el json completo sin filtrar.
 
-    const endpoint = "https://computer-vision-iago-ai.cognitiveservices.azure.com/vision/v2.0/analyze";
+    const endpoint = "https://computer-vision-iago-ai.cognitiveservices.azure.com//computervision/imageanalysis:analyze?api-version=2023-04-01-preview&visualFeatures=tags,objects,caption,denseCaptions,read,smartCrops,people";
     const key = "0a0a05e7da0a4e41b9db8696b0c70966";
     const params = {
         method: "POST",
