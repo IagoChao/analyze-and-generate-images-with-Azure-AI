@@ -8,9 +8,9 @@ const analyzeImage = async (url) => {
     // el extremo que aparece en el portal de Azure es https://computer-vision-iago-ai.cognitiveservices.azure.com/
     // pero en la documentación aparece https://westcentralus.api.cognitive.microsoft.com/vision/v2.0/analyze
     // y en el ejemplo de la documentación aparece https://westcentralus.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Categories,Description,Color
-    // por lo que he decidido usar el del portal de Azure.
+    // por lo que he decidido usar el del portal de Azure en su ultima versión disponible y mostrar el json completo sin filtrar.
 
-    const endpoint = "https://computer-vision-iago-ai.cognitiveservices.azure.com/vision/v4.0/analyze";
+    const endpoint = "https://computer-vision-iago-ai.cognitiveservices.azure.com/vision/v2.0/analyze";
     const key = "0a0a05e7da0a4e41b9db8696b0c70966";
     const params = {
         method: "POST",
