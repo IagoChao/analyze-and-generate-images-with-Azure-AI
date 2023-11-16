@@ -33,7 +33,11 @@ function App() {
   const displayResults = (result) => {
     // show the result of IA.
     const img = document.createElement('img');
-    img.src = result.url;
+    // if not contains url, show the image of url in input.
+    if (!result.url) {
+      const url = document.getElementById('url').value;
+      img.src = url;
+    }
     document.body.appendChild(img);
     // Show json result and below of them the url analyzed.
     const json = document.createElement('pre');
