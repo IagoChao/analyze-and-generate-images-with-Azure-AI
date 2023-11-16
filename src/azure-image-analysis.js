@@ -6,7 +6,7 @@ use API of image analysis 4.0 from azure cognitive services.
 
 const analyzeImage = async (url) => {
     const endpoint = "https://westcentralus.api.cognitive.microsoft.com/vision/v2.0/analyze?visualFeatures=Categories,Description,Color";
-    const key = "keyapi";
+    const key = "301ce43cb0024d0f818b5ea3924ad109";
     const params = {
         method: "POST",
         headers: {
